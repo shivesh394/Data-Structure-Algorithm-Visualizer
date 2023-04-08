@@ -1,0 +1,127 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header {
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.input{
+    color: black;
+    margin-left: 10px;
+    font-weight:bold;
+    font-size: 20px;
+}
+
+#fname{
+    padding: 10px;
+    font-weight: bolder;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+#array {
+    background-color: white;
+    height: 305px;
+    width: 598px;
+    margin: auto;
+    position: relative;
+    margin-top: 64px;
+}
+
+#count {
+    height: 20px;
+    width: 598px;
+    margin: auto;
+}
+
+.block {
+    width: 28px;
+    background-color: #6b5b95;
+    position: absolute;
+    bottom: 0px;
+    transition: 0.2s all ease;
+}
+
+.block_id {
+    position: absolute;
+    color: black;
+    margin-top: -20px;
+    width: 100%;
+    text-align: center;
+}
+
+.block2 {
+    width: 28px;
+    background-color: darkgray;
+    position: absolute;
+    transition: 0.2s all ease;
+}
+
+.block_id3 {
+    position: absolute;
+    color: black;
+    margin-top: 1px;
+    width: 100%;
+    text-align: center;
+}
+
+.label,
+#fname2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn1 {
+    padding: 12px;
+    font-weight: bolder;
+    background-color: #6f459e;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    border: white;
+    margin-top: 1vw;
+    margin-right: 1vw;
+    cursor: pointer;
+}
+
+.btn1:hover {
+    color: black;
+}
+
+#btn {
+    padding: 12px;
+    font-weight: bolder;
+    background-color: #6f459e;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    border: white;
+    cursor: pointer;
+}
+
+#btn:hover {
+    color: black;
+}
+
+#text {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#text2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.size{
+    float: right;
+    margin: 20px;
+}

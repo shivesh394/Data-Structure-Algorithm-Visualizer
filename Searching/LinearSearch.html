@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="LinearSearch.css" />
+</head>
+<body>
+	<br />
+	<p class="header">Linear Search</p>
+	<div class="input">
+        <input onfocus=this.value='' type="text" id="fname" name="fname" size="2">
+        <button type="submit" id="btn" onclick="generatearray()">Insert</button>
+        <button type="submit" id="btn" onclick="Delete()">Delete</button>
+        <button type="submit" id="btn" onclick="GenerateArray()">Random</button>
+		<input class="size" min ="-100" max="0"  type="range" id="myRange" value="-50">
+    </div>
+	<div id="array"></div>
+	<div id="count"></div>
+	<br />
+	<br />
+	<div style="text-align: center">
+		<label class="label" for="fname">Number to be Searched:</label>
+		<input type="text" id="fname2" name="fname" size="1"/>
+		<br />
+		<br />
+		<button type="submit" id="btn" onclick="LinearSearch()">Search</button>
+		<br />
+		<br />
+		<div id="text"></div>
+		<br />
+		<div id="text2"></div>
+	</div>
+
+	<script src="LinearSearch.js"></script>
+</body>
+
+</html>

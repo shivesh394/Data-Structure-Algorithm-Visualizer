@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack</title>
+    <link rel="stylesheet" href="Stack.css" />
+</head>
+<body>
+    <br />
+	<p class="header">Stack</p>
+    <div class="input">
+        <input onfocus=this.value='' type="text" id="fname" name="fname" size="2" required>
+        <button type="submit" id="btn" onclick="Push()">Push</button>
+        <button type="submit" id="btn2" onclick="Pop()">Pop</button>
+        <span id="text"></span>
+        <span class="size">Size of Stack is 6 </span>
+    </div>
+    <div class="color">
+        <div class="no">
+            <div class="color1"></div>
+            <div class="des">Top of the Stack</div>
+        </div>
+	</div>
+	<div id="array"></div>
+	<br />
+    <br />
+    
+    <script src="Stack.js"></script>
+</body>
+</html>

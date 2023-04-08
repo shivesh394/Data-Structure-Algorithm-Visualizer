@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Binary Search Tree Visualizer</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script src="js/binaryTreeImplementation.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <p id="main_title"><a id="main_link" href="" style="font-family: '';">
+            Binary Search Tree
+            Visualizer
+          </a></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="jumbotron">
+          <!-- <h2>Hello, world!</h2> -->
+          <p>
+            This is a template for a simple and quick Binary Search Tree
+            Visualization, you can see how traversal algorithms works. You can
+            also generate your own BST or get a random one.
+          </p>
+
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <button type="button" class="btn btn-primary btn-lg" id="buttonFixedBST">
+              <span>Fixed BST</span>
+            </button>
+          </div>
+          <div class="col-md-6">
+            <button class="btn btn-primary btn-lg" id="buttonRandomBST">
+              <span>Random BST</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="svg_container"></div>
+        <div class="svg_container"></div>
+      </div>
+      <div class="col-md-4" style="padding-right: 4em;">
+        <div class="row">
+          <div class="col-md-6">
+            <div id="btn-group1" class="btn-group-vertical" role="group">
+              <button type="button" class="btn  btn-primary  btn-lg" id="buttonInorder">
+                <span>InOrder</span>
+              </button>
+              <button type="button" class="btn btn-primary btn-lg" id="buttonPostorder">
+                <span>PostOrder</span>
+              </button>
+              <button type="button" class="btn btn-primary btn-lg" id="buttonPreorder">
+                <span>PreOrder</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div id="btn-group2" class="btn-group-vertical" role="group">
+              <button type="button" class="btn btn-primary btn-lg" id="btnInsertRandom">
+                <span>Insert Random</span>
+              </button>
+              <button type="button" class="btn btn-primary btn-lg" id="btnDeleteRandom">
+                <span>Delete Random</span>
+              </button>
+              <button type="button" class="btn btn-primary btn-lg" id="buttonClear">
+                <span>Clear</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- PARAGRAPH HERE -->
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+  <script>
+
+    const DIV_CLASS = ".svg_container";
+    var BST = new BinarySearchTree();
+    var numeros = [15, 25, 10, 7, 22, 23, 13, 9, 27];
+
+
+
+
+    let root;
+
+
+
+    //generateRandomBST(BST, DIV_CLASS);
+    generateFixedBST(BST, numeros, DIV_CLASS);
+
+
+    /* ADD EVENT LISTENERS */
+    document
+      .getElementById("buttonInorder")
+      .addEventListener("click", function () {
+        timeInt = 0;
+        var root = BST.getRootNode();
+        getBackToNormal(root);
+        inOrderAnimation(root);
+        setTimeout(function () {
+          getBackToNormal(root);
+        }, 750 * timeInt++);
+
+        //console.log(timeInt);
+      });
+
+    document
+      .getElementById("buttonPostorder")
+      .addEventListener("click", function () {
+        timeInt = 0;
+        var root = BST.getRootNode();
+        getBackToNormal(root);
+        postOrderAnimation(root);
+        setTimeout(function () {
+          getBackToNormal(root);
+        }, 750 * timeInt++);
+        //console.log(timeInt);
+      });
+
+    document
+      .getElementById("buttonPreorder")
+      .addEventListener("click", function () {
+        timeInt = 0;
+        var root = BST.getRootNode();
+        getBackToNormal(root);
+        preOrderAnimation(root);
+        setTimeout(function () {
+          getBackToNormal(root);
+        }, 750 * timeInt++);
+        //console.log(timeInt);
+      });
+
+    document
+      .getElementById("buttonClear")
+      .addEventListener("click", function () {
+        getBackToNormal(root);
+      });
+    document
+      .getElementById("buttonRandomBST")
+      .addEventListener("click", function () {
+        let root;
+        BST = new BinarySearchTree();
+        generateRandomBST(BST, DIV_CLASS);
+        //console.log(BST);
+      });
+
+    document
+      .getElementById("buttonFixedBST")
+      .addEventListener("click", function () {
+        let root;
+        BST = new BinarySearchTree();
+        generateFixedBST(BST, numeros, DIV_CLASS);
+        //console.log(BST);
+      });
+    document
+      .getElementById("btnDeleteRandom")
+      .addEventListener("click", function () {
+        var root = BST.getRootNode();
+
+        alert("the number to be deleted is:");
+        removeNodeSVG(22, BST, DIV_CLASS);
+      });
+
+    document
+      .getElementById("btnInsertRandom")
+      .addEventListener("click", function () {
+        var root = BST.getRootNode();
+        //getBackToNormal(root);
+        timeint = 0;
+        NUMBER_OF_NODES = 0;
+        getNumberNodes(root);
+        if (NUMBER_OF_NODES < 20) {
+          var n_random = Math.floor(Math.random() * 60) + 1;
+          alert("the number to be insert is: " + n_random);
+          insertNodeSVG(n_random, BST, DIV_CLASS);
+        } else {
+          console.log("maximum number of nodes reached");
+        }
+      });
+  </script>
+
+</body>
+
+</html>

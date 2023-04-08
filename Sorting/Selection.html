@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Sorting Visualizer</title>
+	<link href="Selection.css" rel="stylesheet" />
+</head>
+<body>
+	<br />
+	<br />
+	<p class="head">Selection Sort</p>
+	<div class="input">
+        <input onfocus=this.value='' type="text" id="fname" name="fname" size="2">
+        <button type="submit" id="btn" onclick="generatebars()">Insert</button>
+        <button type="submit" id="btn" onclick="Delete()">Delete</button>
+        <button type="submit" id="btn" onclick="Generatebars()">Random</button>
+		<input class="size" min ="-100" max="0"  type="range" id="myRange" value="-50">
+    </div>
+	<div class="data-container"></div>
+	<div id="count"></div>
+	<br/>
+	<br/>
+	<div id="ele"></div>
+	<div style="text-align: center">
+		<br />
+		<br />
+		<button class="btn2" onclick="SelectionSort()" id="Button2">Selection Sort</button>
+	</div>
+</body>
+
+<script src="Selection.js"></script>
+
+</html>

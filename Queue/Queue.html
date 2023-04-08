@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack</title>
+    <link rel="stylesheet" href="Queue.css" />
+</head>
+<body>
+    <br />
+	<p class="header">Queue</p>
+    <div class="input">
+        <input onfocus=this.value='' type="text" id="fname" name="fname" size="2" required="true">
+        <button type="submit" class="Enqueue" id="btn" onclick="Enqueue()">Enqueue</button>
+        <button type="submit" id="btn2" onclick="Dequeue()">Dequeue</button>
+        <span id="text"></span>
+        <span class="size">Size of Queue is 14 </span>
+    </div>
+    <div class="color">
+        <div class="no">
+            <div class="color1"></div>
+            <div class="des">Front</div>
+        </div>
+        <div class="no">
+            <div class="color2"></div>
+            <div class="des">Rear</div>
+        </div>
+	</div>
+    
+	<div id="array"></div>
+	</div>
+    <script src="Queue.js"></script>
+</body>
+</html>

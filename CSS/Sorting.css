@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container{
+    display: flex;
+    /* background-color: #f4f4f4; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Item{
+    width: 300px;
+    height: 200px;
+    /* background: #0ca168; */
+    /* background: #6f459e; */
+    background: #6b5b95;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    margin: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    border-radius: 8px;
+    /* font-weight: bolder; */
+}
+
+.Item a:hover{
+    color: black;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link href="Insertion.css" rel="stylesheet" />
+</head>
+
+<body>
+	<br />
+	<br />
+	<section class="head">Insertion Sort</section>
+	<div class="input">
+        <input onfocus="this.value=''" type="text" id="fname" name="fname" size="2">
+        <button type="submit" id="btn" onclick="generatebars()">Insert</button>
+        <button type="submit" id="btn" onclick="Delete()">Delete</button>
+        <button type="submit" id="btn" onclick="Generatebars()">Random</button>
+		<input class="size" min ="-100" max="0"  type="range" id="myRange" value="-50">
+    </div>
+	<section class="data-container"></section>
+	<div id="count"></div>
+	<br />
+	<section id="ele"></section>
+	<div style="margin: auto; width: fit-content;">
+		<br />
+		<br />
+		<button class="btn2" onclick="InsertionSort()" id="Button2">Insertion Sort</button>
+	</div>
+</body>
+
+<script src="Insertion.js"></script>
+
+</html>

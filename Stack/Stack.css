@@ -1,0 +1,138 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header {
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.input{
+    color: black;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+#fname{
+    padding: 10px;
+    font-weight: bolder;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+#btn{
+    width: 90px;
+    padding: 12px;
+    font-weight: bolder;
+    background-color: #6f459e;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    border: white;
+    margin-top: 1vw;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#btn:hover {
+    color: black;
+}
+
+#btn2{
+    width: 90px;
+    padding: 12px;
+    font-weight: bolder;
+    background-color: #6f459e;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    border: white;
+    margin-top: 1vw;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#btn2:hover {
+    color: black;
+}
+
+.size{
+    padding: 12px;
+    font-weight: bolder;
+    background-color: #6f459e;
+    border-radius: 10px;
+    color: white;
+    float: right;
+    margin-right: 20px;
+}
+
+#array {
+    background-color: white;
+    height: 540px;
+    width: 100px;
+    margin: auto;
+    position: relative;
+    margin-top: 64px;
+}
+
+
+.block {
+    width: 100px;
+    background-color: #6b5b95;
+    position: absolute;
+    bottom: 0px;
+    transition: 0.2s all ease;
+}
+
+.block_id {
+    position: absolute;
+    color: black;
+    margin-top: 0px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.output {
+    margin-left: 378px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: red;
+}
+
+.color{
+    margin-top: 30px;
+}
+
+.no{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    margin-left: 40px;
+}
+
+
+.color1{
+    width: 25px;
+    height: 25px;
+    background-color: red;
+}
+
+.des{
+    color: black;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
